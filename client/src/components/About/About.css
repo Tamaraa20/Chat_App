@@ -1,0 +1,197 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #005FFF;
+    --text-dark: #333;
+    --text-light: #fff;
+    --padding-default: 5%;
+}
+
+/* General Section Styling */
+.AboutSection1
+ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--padding-default);
+    gap: 2rem;
+}
+
+/* About Section 1 */
+.AboutSection1 {
+    max-width: 100%;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: left;
+    flex-direction: row-reverse; /* Image on the left for better visual balance */
+}
+
+
+/* Text Containers */
+.text1, 
+.text2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text1 h1, 
+.text2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.text1 p, 
+.text2 li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Image Styling */
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adds a smooth rounded effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+    .AboutSection1{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 90%;
+    }
+
+    .text1 h1, 
+    .text2 h1 {
+        font-size: 2rem;
+    }
+
+    .text1 p, 
+    .text2 li {
+        font-size: 1.1rem;
+    }
+}/* About Section 2 */
+.AboutSection2 {
+    background: linear-gradient(135deg, #f9f9f9 0%, #e0e0e0 100%); /* Subtle gradient background */
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4% 10%;
+    border-radius: 12px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1); /* Smoother and larger shadow */
+    gap: 3rem;
+    transition: transform 0.3s ease;
+}
+
+.AboutSection2:hover {
+    transform: translateY(-5px); /* Slight hover effect for interactive feel */
+}
+
+/* Text Container Styling */
+.text2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.AboutSection2 h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.AboutSection2 h1:hover {
+    color: #003d99; /* Darker shade for hover effect */
+}
+
+.AboutSection2 li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    padding-left: 0; /* Remove padding for no indentation */
+    position: relative;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+/* Remove list item dots */
+.AboutSection2 ul {
+    list-style-type: none; /* This removes the bullets */
+    padding-left: 0; /* Removes the default left padding for the list */
+}
+
+.AboutSection2 li:hover {
+    transform: translateX(5px); /* Subtle hover effect on list items */
+}
+
+/* Image Styling */
+.AboutSection2 .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutSection2 .image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.AboutSection2 .image img:hover {
+    transform: scale(1.05); /* Image zoom effect */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media only screen and (max-width: 1024px) {
+    .AboutSection2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .AboutSection2 .image img {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .AboutSection2 .text2 {
+        text-align: center;
+    }
+
+    .AboutSection2 h1 {
+        font-size: 2.2rem;
+    }
+
+    .AboutSection2 li {
+        font-size: 1.1rem;
+    }
+}

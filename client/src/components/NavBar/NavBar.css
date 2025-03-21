@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #3588FE;
+    --btn-color: #0C8CE9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: rgb(234, 230, 255);
+    max-width: 100%;
+    height: 8vh;
+    padding: 10px;
+}
+
+.navigation img {
+    max-height: fit-content;
+    max-width: 130px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+.btn {
+    background-color: var(--btn-color);
+    max-width: fit-content;
+    margin: 5%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: rgb(82, 135, 250);
+}
+
+.btn .nav-link {
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.signIn {
+    display: flex;
+    align-items: center;
+    width: 350px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo,
+    .signIn {
+        margin-bottom: 10px;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .navigation {
+        max-width: 100%;
+        height: auto;
+    }
+}
