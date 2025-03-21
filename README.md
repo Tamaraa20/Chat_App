@@ -12,7 +12,7 @@ Chat App is a web-based application designed to facilitate real-time communicati
 
 **Technologies Used**
 
-**Frontend:** JavaScript, CSS, HTMLm React
+**Frontend:** JavaScript, CSS, HTML, React
 
 **Backend:** Node.js, Express.js
 
@@ -21,11 +21,13 @@ Chat App is a web-based application designed to facilitate real-time communicati
 **Real-time Communication:** Socket.io
 
 ## Preview
-![33](https://github.com/user-attachments/assets/c8a95ef1-4690-45e7-b869-f81627accecc)
-![6](https://github.com/user-attachments/assets/b25b07b0-ba8e-4a45-91e1-ccc0a0235b4a)
-![8](https://github.com/user-attachments/assets/cb82d9be-c068-4e6d-a106-fd0f96071528)
-![4](https://github.com/user-attachments/assets/bf161f2a-7e12-4309-b645-83324b3151bb)
-![1](https://github.com/user-attachments/assets/1ad48610-aaa8-4033-bc0d-d9188c7f9895)
+![33](https://github.com/user-attachments/assets/4045aeaa-79c3-4e5a-8281-cd8e2edd247e)
+![6](https://github.com/user-attachments/assets/9664ab0e-d0a2-4dfe-b4ef-a9c94c4dbfc3)
+![8](https://github.com/user-attachments/assets/ae7b5ba1-e30a-46c6-8147-4a089bb6828e)
+![4](https://github.com/user-attachments/assets/2bd75806-82a9-4798-be9c-8628bbf45634)
+![1](https://github.com/user-attachments/assets/9cbd874b-677e-4334-b86d-b5e45f953e2f)
+
+
 
 ## Installation
 
